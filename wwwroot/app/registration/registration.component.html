@@ -1,0 +1,258 @@
+<div class="registration-page">
+    <div class="container page">
+        <div class="row">
+            <h1 class="text-xs-center">Registration</h1>
+            <div class="col-md-10 offset-md-1 col-xs-12">
+                <list-errors [errors]="errors"></list-errors>
+
+                <!--<div>
+                    <accordion [multiple]="false">
+                        <accordion-item *ngFor="let item of itemsList">
+                            <accordion-item-head>{{item.title}}</accordion-item-head>
+                            <accordion-item-body>{{item.description}}</accordion-item-body>
+                        </accordion-item>
+                    </accordion>
+                </div>-->
+
+                <form [formGroup]="registrationForm">
+                    <fieldset [disabled]="isSubmitting">
+                        <!--Step 1 Select Subscription -->
+                        <fieldset class="form-group">
+                            <h3 class="text-xs-left">Step 1: Subscription Type</h3>
+                            <label>Base Plan</label>
+                            <div *ngFor="let subscriptionType of subscriptionTypes">
+                                <label>
+                                   <input type="radio" name="subscriptionType" formControlName="subscriptionType"
+                                   value="subscriptionType.id">
+                                   {{subscriptionType.name}}
+                               </label>
+                            </div>
+                        </fieldset>
+                        <!--Step 2 Enter Client Info -->
+                        <h3 class="text-xs-left">Step 2: Client Info</h3>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="text" placeholder="Company name" formControlName="companyName" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="industryType" formControlName="industryType">                               
+                                <option value="" disabled selected>Industry Type</option>
+                                <option *ngFor="let industryType of industryTypes" value="industryType.id" >
+                                        {{industryType.name}}
+                                </option>                                 
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="companySize" formControlName="companySize">
+                                <option value="" disabled selected>Company Size</option>
+                                <option *ngFor="let companySize of companySizes" value="companySize.id" >
+                                    {{companySize.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="country" formControlName="country">
+                                <option value="" disabled selected>Country</option>
+                                <option *ngFor="let country of countries" value="country.id" >
+                                    {{country.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="province" formControlName="province">
+                                <option value="" disabled selected>Province</option>
+                                <option *ngFor="let province of provinces" value="province.id" >
+                                    {{province.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="city" formControlName="city">
+                                <option value="" disabled selected>City</option>
+                                <option *ngFor="let city of cities" value="city.id" >
+                                    {{city.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="text" placeholder="Suburb" formControlName="suburb" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="text" placeholder="First Name" formControlName="firstName" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="text" placeholder="Surname" formControlName="surname" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="tel" placeholder="Contact Number" formControlName="contactNumber" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input class="form-control" type="email" placeholder="Email" formControlName="email" />
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="companyType" formControlName="companyType">
+                                <option value="" disabled selected>Company Type</option>
+                                <option *ngFor="let companyType of companyTypes" value="companyType.id" >
+                                    {{companyType.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <!--END Step 2 Enter Client Info -->
+
+                        <!--Step 3: Enter Site Info -->
+                        <h3 class="text-xs-left">Step 3: Site Info</h3>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="locationCount" formControlName="locationCount">
+                                <option value="0" disabled selected>How many physical locations do you operate from?</option>
+                                <option *ngFor="let number of howManyNumbers" value="number.id" >
+                                    {{number.id}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="virtualEnviromentCount" formControlName="virtualEnviromentCount">
+                                <option value="0" disabled selected>How many virtual environments do you operate from?</option>
+                                <option *ngFor="let number of howManyNumbers" value="number.id" >
+                                    {{number.id}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasComplianceOfficer" formControlName="hasComplianceOfficer">
+                                <option value="0" disabled selected>Do you have a Compliance officer?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasItDept" formControlName="hasItDept">
+                                <option value="0" disabled selected>Do you have an IT Department?</option>
+                                <option *ngFor="let yesno of siteYesNoOutsourced" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasOrganogram" formControlName="hasOrganogram">
+                                <option value="0" disabled selected>Do you have a company organogram?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasInternationalPres" formControlName="hasInternationalPres">
+                                <option value="0" disabled selected>Do you have international presence?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasLegalDept" formControlName="hasLegalDept">
+                                <option value="0" disabled selected>Do you have a Legal department?</option>
+                                <option *ngFor="let yesno of siteYesNoOutsourced" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasHrDept" formControlName="hasHrDept">
+                                <option value="0" disabled selected>Do you have an HR department?</option>
+                                <option *ngFor="let yesno of siteYesNoOutsourced" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasWebsite" formControlName="hasWebsite">
+                                <option value="0" disabled selected>Do you have a company website?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+
+                        <!--END Step 3 -->
+                        <!--Step 4: Enter Framework Info -->
+                        <h3 class="text-xs-left">Step 4: Framework Info</h3>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasExistingFramwork" formControlName="hasExistingFramwork">
+                                <option value="0" disabled selected>Do you have a framework in place?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="requiresCertification" formControlName="requiresCertification">
+                                <option value="0" disabled selected>Do you require certification?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasPoliciesInPlace" formControlName="hasPoliciesInPlace">
+                                <option value="0" disabled selected>Do you have any policies in place?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasContactListOfAllEmployees" formControlName="hasContactListOfAllEmployees">
+                                <option value="0" disabled selected>Do you have a contact list of all employees in your company? (Name, Surname, Email and Role)</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasEmailServer" formControlName="hasEmailServer">
+                                <option value="0" disabled selected>Do you have an email server?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasActiveDirectory" formControlName="hasActiveDirectory">
+                                <option value="0" disabled selected>Do you have an Active Directory?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasAntiVirus" formControlName="hasAntiVirus">
+                                <option value="0" disabled selected>Do you have anti virus / malware software?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasDataBackup" formControlName="hasDataBackup">
+                                <option value="0" disabled selected>Do you have a formal data backup solution?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <select class="form-control" name="hasCommercialFirewall" formControlName="hasCommercialFirewall">
+                                <option value="0" disabled selected>Do you have a commercial firewall solution?</option>
+                                <option *ngFor="let yesno of siteYesNoDontKnow" value="yesno.id" >
+                                    {{yesno.name}}
+                                </option>
+                            </select>
+                        </fieldset>
+
+                        <!--END Step 4 -->
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
