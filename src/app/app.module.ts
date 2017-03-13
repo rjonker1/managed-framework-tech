@@ -15,19 +15,38 @@ import {
   PreloadAllModules
 } from '@angular/router';
 
+import { AppComponent } from './app.component';
+import { AuthModule } from './auth/auth.module';
+import { HomeModule } from './home/home.module';
+import { ProfileModule } from './profile/profile.module';
+import { SettingsModule } from './settings/settings.module';
+import { RegistrationModule } from './registration/registration.module';
+
 /*
  * Platform and Environment providers/directives/pipes
  */
 import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
 // App is our top level component
-import { AppComponent } from './app.component';
+//import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
+//import { HomeComponent } from './home';
+//import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
+
+import {
+  ApiService,
+  AuthGuard,
+  FooterComponent,
+  HeaderComponent,
+  JwtService,
+  ProfilesService,
+  SharedModule,
+  TagsService,
+  UserService
+} from './shared';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -48,11 +67,15 @@ type StoreType = {
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ AppComponent ],
+  bootstrap: [ 
+    AppComponent,
+    FooterComponent,
+    HeaderComponent 
+    ],
   declarations: [
     AppComponent,
-    AboutComponent,
-    HomeComponent,
+    //AboutComponent,
+    //HomeComponent,
     NoContentComponent,
     XLargeDirective
   ],

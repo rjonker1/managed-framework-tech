@@ -1,0 +1,25 @@
+<div class="registration-subscription-page">
+    <div class="container page">
+        <div class="row">
+            <h1 class="text-xs-center">Registration</h1>
+            <div class="col-md-10 offset-md-1 col-xs-12">
+                <list-errors [errors]="errors"></list-errors>
+
+                <form [formGroup]="subscriptionForm">
+                    <fieldset [disabled]="isSubmitting">
+                        <fieldset class="form-group">
+                            <label>Base Plan</label>
+                            <div *ngFor="let subscriptionType of subscriptionTypes">
+                                <label>
+                                   <input type="radio" name="subscriptionType" formControlName="subscriptionType"
+                                   value="subscriptionType.id">
+                                   {{subscriptionType.name}}
+                               </label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
