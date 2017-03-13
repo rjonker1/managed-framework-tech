@@ -2,41 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (web)",
-            "type": "coreclr",
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceRoot}\\bin\\Debug\\netcoreapp1.0\\managed-framework-tech.dll",
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "stopAtEntry": false,
-            "internalConsoleOptions": "openOnSessionStart",
-            "launchBrowser": {
-                "enabled": true,
-                "args": "${auto-detect-url}",
-                "windows": {
-                    "command": "cmd.exe",
-                    "args": "/C start ${auto-detect-url}"
-                },
-                "osx": {
-                    "command": "open"
-                },
-                "linux": {
-                    "command": "xdg-open"
-                }
-            },
-            "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "sourceFileMap": {
-                "/Views": "${workspaceRoot}/Views"
-            }
+            "url": "http://localhost:3000/*",
+            "runtimeArgs": [
+              "--disable-web-security",
+              "--user-data-dir",
+              "--remote-debugging-port=9222"
+            ],
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
         },
         {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
             "request": "attach",
-            "processId": "${command.pickProcess}"
+            "url": "http://localhost:3000/*",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
         }
     ]
 }

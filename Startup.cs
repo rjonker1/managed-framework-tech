@@ -1,4 +1,7 @@
-using System.IO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -68,16 +71,17 @@ namespace WebApplication
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.Use(async(context, next) => 
+            app.Use(async (context, next) =>
             {
                 await next();
-                if(context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value))
-                {
+
+                if (context.Response.StatusCode == 404 && !System.IO.Path.HasExtension(context.Request.Path.Value))
+                { 
                     context.Request.Path = "/index.html";
                     await next();
-                }  
-
+                }
             });
+
 
             app.UseStaticFiles();
 

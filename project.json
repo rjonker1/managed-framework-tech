@@ -83,8 +83,7 @@
   "buildOptions": {
     "debugType": "portable",
     "emitEntryPoint": true,
-    "preserveCompilationContext": true,
-    "compile": { "exclude": "node_modules/" }
+    "preserveCompilationContext": true
   },
 
   "runtimeOptions": {
@@ -108,6 +107,6 @@
   },
 
   "tooling": {
-    "defaultNamespace": "ManagedFrameworkWeb"
+    "defaultNamespace": "WebApplication"
   }
 }
