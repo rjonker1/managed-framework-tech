@@ -13,14 +13,34 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->
+    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Remove="yarn.lock" />
+    <Compile Remove="ClientApp\app\components\counter.delete\**" />
+    <Compile Remove="ClientApp\app\components\fetchdata.delete\**" />
+    <Compile Remove="ClientApp\app\components\profile.delete\**" />
+    <Compile Remove="ClientApp\app\settings\**" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+    <EmbeddedResource Remove="ClientApp\app\components\counter.delete\**" />
+    <EmbeddedResource Remove="ClientApp\app\components\fetchdata.delete\**" />
+    <EmbeddedResource Remove="ClientApp\app\components\profile.delete\**" />
+    <EmbeddedResource Remove="ClientApp\app\settings\**" />
+    <None Remove="ClientApp\app\components\counter.delete\**" />
+    <None Remove="ClientApp\app\components\fetchdata.delete\**" />
+    <None Remove="ClientApp\app\components\profile.delete\**" />
+    <None Remove="ClientApp\app\settings\**" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClientApp\app\components\login\" />
+    <Folder Include="ClientApp\app\components\register\" />
+    <Folder Include="ClientApp\app\_services\" />
+    <Folder Include="ClientApp\app\_helpers\" />
+    <Folder Include="ClientApp\app\_guards\" />
+    <Folder Include="ClientApp\app\_directives\" />
     <Folder Include="ClientApp\assets\js\" />
     <Folder Include="ClientApp\assets\styles\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
