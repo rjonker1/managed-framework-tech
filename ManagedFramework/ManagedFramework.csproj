@@ -33,7 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\app\components\login\" />
-    <Folder Include="ClientApp\app\components\register\" />
     <Folder Include="ClientApp\app\_services\" />
     <Folder Include="ClientApp\app\_helpers\" />
     <Folder Include="ClientApp\app\_guards\" />

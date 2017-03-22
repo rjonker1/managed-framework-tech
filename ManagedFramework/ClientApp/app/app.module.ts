@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // used to create fake backend
@@ -19,14 +19,17 @@ import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 
 import { LoginComponent } from './components/login/index';
-import { RegisterComponent } from './components/register/index';
+import { RegisterComponent, RegisterCompanyComponent } from './components/register/index';
 import { HomeComponent } from './components/home/index';
+import { ProfileComponent } from './components/profile/index';
+import { DashboardComponent } from './components/dashboard/index';
 
 @NgModule({
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         HttpModule,
         routing
     ],
@@ -37,7 +40,10 @@ import { HomeComponent } from './components/home/index';
         FooterComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        RegisterCompanyComponent,
+        ProfileComponent,
+        DashboardComponent
     ],
     providers: [
         AuthGuard,
