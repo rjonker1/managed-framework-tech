@@ -1,0 +1,1355 @@
+managedframework.dedicated.co.za
+9p!5x2CCuxpnUym
+
+https://managedframework.dedicated.co.za:2083
+Username: managedframework
+Password: rOzI)Hw[a(4w
+
+154.0.170.171
+DirectoryIndex /Views/Home/Index.cshtml
+
+
+login as: root
+root@managedframework.dedicated.co.za's password:
+Last failed login: Thu Mar 23 12:09:40 SAST 2017 from 113.122.175.159 on ssh:not                            ty
+There were 314 failed login attempts since the last successful login.
+Last login: Wed Mar 22 19:34:22 2017 from 41.160.243.66
+[root@managedframework ~]# dotnet --version
+1.0.1
+[root@managedframework ~]# dotnet
+
+Microsoft .NET Core Shared Framework Host
+
+  Version  : 1.1.0
+  Build    : 928f77c4bc3f49d892459992fb6e1d5542cb5e86
+
+Usage: dotnet [common-options] [[options] path-to-application]
+
+Common Options:
+  --help                           Display .NET Core Shared Framework Host help.
+  --version                        Display .NET Core Shared Framework Host versi                            on.
+
+Options:
+  --fx-version <version>           Version of the installed Shared Framework to                             use to run the application.
+  --additionalprobingpath <path>   Path containing probing policy and assemblies                             to probe for.
+
+Path to Application:
+  The path to a .NET Core managed application, dll or exe file to execute.
+
+If you are debugging the Shared Framework Host, set 'COREHOST_TRACE' to '1' in y                            our environment.
+
+To get started on developing applications for .NET Core, install the SDK from:
+  http://go.microsoft.com/fwlink/?LinkID=798306&clcid=0x409
+[root@managedframework ~]# pwd
+/root
+[root@managedframework ~]# cd /home/managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+appsettings.Development.json
+appsettings.json
+bower.json
+bundleconfig.json
+Microsoft.ApplicationInsights.AspNetCore.dll
+Microsoft.ApplicationInsights.dll
+Microsoft.AspNetCore.Antiforgery.dll
+Microsoft.AspNetCore.Authorization.dll
+Microsoft.AspNetCore.Cors.dll
+Microsoft.AspNetCore.Cryptography.Internal.dll
+Microsoft.AspNetCore.DataProtection.Abstractions.dll
+Microsoft.AspNetCore.DataProtection.dll
+Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+Microsoft.AspNetCore.Diagnostics.dll
+Microsoft.AspNetCore.Hosting.Abstractions.dll
+Microsoft.AspNetCore.Hosting.dll
+Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+Microsoft.AspNetCore.Html.Abstractions.dll
+Microsoft.AspNetCore.Http.Abstractions.dll
+Microsoft.AspNetCore.Http.dll
+Microsoft.AspNetCore.Http.Extensions.dll
+Microsoft.AspNetCore.Http.Features.dll
+Microsoft.AspNetCore.HttpOverrides.dll
+Microsoft.AspNetCore.JsonPatch.dll
+Microsoft.AspNetCore.Localization.dll
+Microsoft.AspNetCore.Mvc.Abstractions.dll
+Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+Microsoft.AspNetCore.Mvc.Core.dll
+Microsoft.AspNetCore.Mvc.Cors.dll
+Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+Microsoft.AspNetCore.Mvc.dll
+Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+Microsoft.AspNetCore.Mvc.Localization.dll
+Microsoft.AspNetCore.Mvc.Razor.dll
+Microsoft.AspNetCore.Mvc.Razor.Host.dll
+Microsoft.AspNetCore.Mvc.TagHelpers.dll
+Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+Microsoft.AspNetCore.Razor.dll
+Microsoft.AspNetCore.Razor.Runtime.dll
+Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+Microsoft.AspNetCore.Routing.Abstractions.dll
+Microsoft.AspNetCore.Routing.dll
+Microsoft.AspNetCore.Server.IISIntegration.dll
+Microsoft.AspNetCore.Server.Kestrel.dll
+Microsoft.AspNetCore.StaticFiles.dll
+Microsoft.AspNetCore.WebUtilities.dll
+Microsoft.DotNet.PlatformAbstractions.dll
+Microsoft.Extensions.Caching.Abstractions.dll
+Microsoft.Extensions.Caching.Memory.dll
+Microsoft.Extensions.Configuration.Abstractions.dll
+Microsoft.Extensions.Configuration.Binder.dll
+Microsoft.Extensions.Configuration.dll
+Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Microsoft.Extensions.Configuration.FileExtensions.dll
+Microsoft.Extensions.Configuration.Json.dll
+Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Microsoft.Extensions.DependencyInjection.dll
+Microsoft.Extensions.DependencyModel.dll
+Microsoft.Extensions.DiagnosticAdapter.dll
+Microsoft.Extensions.FileProviders.Abstractions.dll
+Microsoft.Extensions.FileProviders.Composite.dll
+Microsoft.Extensions.FileProviders.Physical.dll
+Microsoft.Extensions.FileSystemGlobbing.dll
+Microsoft.Extensions.Globalization.CultureInfoCache.dll
+Microsoft.Extensions.Localization.Abstractions.dll
+Microsoft.Extensions.Localization.dll
+Microsoft.Extensions.Logging.Abstractions.dll
+Microsoft.Extensions.Logging.Console.dll
+Microsoft.Extensions.Logging.Debug.dll
+Microsoft.Extensions.Logging.dll
+Microsoft.Extensions.ObjectPool.dll
+Microsoft.Extensions.Options.ConfigurationExtensions.dll
+Microsoft.Extensions.Options.dll
+Microsoft.Extensions.PlatformAbstractions.dll
+Microsoft.Extensions.Primitives.dll
+Microsoft.Extensions.WebEncoders.dll
+Microsoft.Net.Http.Headers.dll
+Microsoft.VisualStudio.Web.BrowserLink.dll
+Newtonsoft.Json.dll
+refs
+SpikeWebApp.deps.json
+SpikeWebApp.dll
+SpikeWebApp.pdb
+SpikeWebApp.runtimeconfig.json
+System.Collections.NonGeneric.dll
+System.Collections.Specialized.dll
+System.ComponentModel.Primitives.dll
+System.ComponentModel.TypeConverter.dll
+System.Diagnostics.Contracts.dll
+System.Diagnostics.StackTrace.dll
+System.Net.WebSockets.dll
+System.Runtime.CompilerServices.Unsafe.dll
+System.Runtime.Serialization.Primitives.dll
+System.Text.Encodings.Web.dll
+Views
+web.config
+wwwroot
+[root@managedframework public_html]# dotnet SpikeWebApp.dll
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^CApplication is shutting down...
+[root@managedframework public_html]# sudo vi /etc/httpd/conf.d/dotnet.config
+ProxyPass /public_html http:/localhost:5000/public_html
+ProxyPassReverse /public_html http://localhost:5000/public_html
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --
+
+login as: root
+root@managedframework.dedicated.co.za's password:
+Last login: Thu Mar 23 14:17:55 2017 from 41.160.243.66
+[root@managedframework ~]# cd /etc
+[root@managedframework etc]# cd httpd
+-bash: cd: httpd: No such file or directory
+[root@managedframework etc]# cd /httpd
+-bash: cd: /httpd: No such file or directory
+[root@managedframework etc]# rm dotnet.config
+rm: cannot remove ‘dotnet.config’: No such file or directory
+[root@managedframework etc]# ls
+adjtime                          named
+aliases                          named.conf
+aliases.db                       named.conf.cache
+alternatives                     named.conf.precpanelinstall
+anacrontab                       named.conf.prerebuilddnsconfig
+antivirus.exim                   named.conf.rebuilddnsconfig
+apache2                          named.conf,v
+asound.conf                      named.conf.zonedir.cache
+at.deny                          named.iscdlv.key
+audisp                           named.rfc1912.zones
+audit                            named.root.key
+avahi                            nanorc
+backupmxhosts                    neighbor_netblocks
+bash_completion.d                netconfig
+bashrc                           NetworkManager
+binfmt.d                         networks
+blacklist.dat                    nginx
+centos-release                   nocgiusers
+centos-release-upstream          nscd.conf
+chkconfig.d                      nscddisable
+chkserv.d                        nsswitch.conf
+cpanel                           nsswitch.conf.bak
+cpanel_exim_system_filter        nsswitch.conf.rpmnew
+cpanel_mail_netblocks            openldap
+cpanel_php_fpmdisable            opt
+cpanelsync.exclude               os-release
+cpbackup.conf                    outgoing_mail_hold_users
+cpbackup.conf.cache              outgoing_mail_suspended_users
+cpsources.conf                   pam.d
+cpspamd.conf                     passwd
+cpupdate.conf                    passwd-
+cron.d                           passwd.cache
+cron.daily                       passwd.nouids.cache
+cron.deny                        passwd,v
+cron.hourly                      pkcs11
+cron.monthly                     pki
+crontab                          plymouth
+cron.weekly                      pm
+crypttab                         polkit-1
+csh.cshrc                        popt.d
+csh.login                        ppp
+dbowners                         prelink.conf.d
+dbus-1                           printcap
+default                          profile
+demodomains                      profile.d
+demouids                         proftpd
+demousers                        proftpd.conf
+depmod.d                         protocols
+dhcp                             pure-ftpd
+dhparams.pem                     pure-ftpd.conf.rpmsave
+digestshadow                     pure-ftpd.pem
+DIR_COLORS                       python
+DIR_COLORS.256color              quota.conf
+DIR_COLORS.lightbgcolor          rc0.d
+dnsmasq.conf                     rc1.d
+dnsmasq.d                        rc2.d
+domainips                        rc3.d
+domainusers                      rc4.d
+dovecot                          rc5.d
+dracut.conf                      rc6.d
+dracut.conf.d                    rc.d
+e2fsck.conf                      rc.local
+elinks.conf                      rdma
+email_send_limits                recent_authed_mail_ips
+environment                      recent_authed_mail_ips_users
+ethertypes                       recent_recipient_mail_server_ips
+exim.aclspam                     redhat-release
+exim.conf                        relayhosts
+exim.conf.dist                   relayhostsusers
+exim.conf.localopts              remotedomains
+exim.conf.mailman2.dist          resolv.conf
+exim.conf.mailman2.exiscan.dist  resolv.conf.bak
+exim.crt                         rndc.conf
+exim.key                         rndc.key
+eximmailtrap                     rpc
+exim.pl                          rpm
+exim.pl.local                    rsyncd.conf
+eximrejects                      rsyslog.conf
+exim_trusted_configs             rsyslog.d
+exports                          rwtab
+favicon.png                      rwtab.d
+filesystems                      sasl2
+firewalld                        scl
+fonts                            screenrc
+fstab                            secondarymx
+fstab.quotas                     securetty
+fstab,v                          security
+ftpd-dhparam.pem                 selinux
+ftpd-dsa-key.pem                 senderverifybypasshosts
+ftpd-dsa.pem                     services
+ftpd-rsa-key.pem                 sestatus.conf
+ftpd-rsa.pem                     shadow
+gcrypt                           shadow-
+GeoIP.conf                       shadow.nouids.cache
+GeoIP.conf.default               shadow,v
+ghostscript                      shells
+gnupg                            skel
+GREP_COLORS                      skipsmtpcheckhosts
+greylist_common_mail_providers   smartmontools
+greylist_trusted_netblocks       spammeripblocks
+groff                            spammers
+group                            ssh
+group-                           ssl
+grub2.cfg                        ssldomains
+grub2-efi.cfg                    statetab
+grub.d                           statetab.d
+gshadow                          stats.conf
+gshadow-                         subgid
+gss                              subuid
+host.conf                        subversion
+hostname                         sudo.conf
+hosts                            sudoers
+hosts.allow                      sudoers.d
+hosts.bak                        sudo-ldap.conf
+hosts.deny                       sysconfig
+ImageMagick                      sysctl.conf
+init.d                           sysctl.d
+inittab                          systemd
+inputrc                          system-release
+ipaddrpool                       system-release-cpe
+iproute2                         tcsd.conf
+ips                              terminfo
+issue                            tmpfiles.d
+issue.net                        trueuserdomains
+kdump.conf                       trueuserowners
+kernel                           trusted-key.key
+krb5.conf                        trustedmailhosts
+krb5.conf.d                      trusted_mail_users
+ld.so.cache                      tuned
+ld.so.conf                       udev
+ld.so.conf.d                     updatedb.conf
+libaudit.conf                    userbwlimits
+libnl                            userdatadomains
+libuser.conf                     userdatadomains.json
+localaliases                     userdomains
+localdomains                     userplans
+locale.conf                      valiases
+localtime                        vconsole.conf
+login.defs                       vdomainaliases
+logrotate.conf                   vfilters
+logrotate.d                      vftp
+lvm                              vimrc
+lynx.cfg                         virc
+lynx.lss                         webspam
+lynx-site.cfg                    wgetrc
+machine-id                       wpa_supplicant
+magic                            wwwacct.conf
+mail                             wwwacct.conf.cache
+mailbox_formats                  wwwacct.conf.shadow
+mailcap                          wwwacct.conf.shadow.cache
+mailhelo                         X11
+mailips                          xdg
+mail.rc                          xinetd.conf
+makedumpfile.conf.sample         xinetd.d
+man_db.conf                      yum
+mime.types                       yum.conf
+mke2fs.conf                      yum.repos.d
+modprobe.d                       zlogin
+modules-load.d                   zlogout
+motd                             zprofile
+mtab                             zshenv
+mta_dkim_active                  zshrc
+my.cnf
+[root@managedframework etc]# cd ..
+[root@managedframework /]# cd ..
+[root@managedframework /]# sudo vi /etc/httpd/conf.d/dotnet.config
+
+
+
+
+E325: ATTENTION
+Found a swap file by the name "~/tmp/dotnet.config.swp"
+          owned by: root   dated: Thu Mar 23 13:55:27 2017
+         file name: /etc/httpd/conf.d/dotnet.config
+          modified: YES
+         user name: root   host name: managedframework.co.za
+        process ID: 22870
+While opening file "/etc/httpd/conf.d/dotnet.config"
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /etc/httpd/conf.d/dotnet.conf
+ig"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/root/tmp/dotnet.config.swp"
+    to avoid this message.
+"/etc/httpd/conf.d/dotnet.config" [New DIRECTORY]
+Press ENTER or type command to continue
+
+sudo /usr/sbin/setsebool httpd_can_network_connect 1
+
+
+
+login as: root
+root@managedframework.dedicated.co.za's password:
+Last failed login: Thu Mar 23 16:57:06 SAST 2017 from 222.59.162.22 on ssh:notty
+There were 1347 failed login attempts since the last successful login.
+Last login: Thu Mar 23 14:57:32 2017 from 41.160.243.66
+[root@managedframework ~]# cd /home/managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+etc  web
+[root@managedframework public_html]# cd web
+[root@managedframework web]# ls
+appsettings.Development.json
+appsettings.json
+bower.json
+bundleconfig.json
+Microsoft.ApplicationInsights.AspNetCore.dll
+Microsoft.ApplicationInsights.dll
+Microsoft.AspNetCore.Antiforgery.dll
+Microsoft.AspNetCore.Authorization.dll
+Microsoft.AspNetCore.Cors.dll
+Microsoft.AspNetCore.Cryptography.Internal.dll
+Microsoft.AspNetCore.DataProtection.Abstractions.dll
+Microsoft.AspNetCore.DataProtection.dll
+Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+Microsoft.AspNetCore.Diagnostics.dll
+Microsoft.AspNetCore.Hosting.Abstractions.dll
+Microsoft.AspNetCore.Hosting.dll
+Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+Microsoft.AspNetCore.Html.Abstractions.dll
+Microsoft.AspNetCore.Http.Abstractions.dll
+Microsoft.AspNetCore.Http.dll
+Microsoft.AspNetCore.Http.Extensions.dll
+Microsoft.AspNetCore.Http.Features.dll
+Microsoft.AspNetCore.HttpOverrides.dll
+Microsoft.AspNetCore.JsonPatch.dll
+Microsoft.AspNetCore.Localization.dll
+Microsoft.AspNetCore.Mvc.Abstractions.dll
+Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+Microsoft.AspNetCore.Mvc.Core.dll
+Microsoft.AspNetCore.Mvc.Cors.dll
+Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+Microsoft.AspNetCore.Mvc.dll
+Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+Microsoft.AspNetCore.Mvc.Localization.dll
+Microsoft.AspNetCore.Mvc.Razor.dll
+Microsoft.AspNetCore.Mvc.Razor.Host.dll
+Microsoft.AspNetCore.Mvc.TagHelpers.dll
+Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+Microsoft.AspNetCore.Razor.dll
+Microsoft.AspNetCore.Razor.Runtime.dll
+Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+Microsoft.AspNetCore.Routing.Abstractions.dll
+Microsoft.AspNetCore.Routing.dll
+Microsoft.AspNetCore.Server.IISIntegration.dll
+Microsoft.AspNetCore.Server.Kestrel.dll
+Microsoft.AspNetCore.StaticFiles.dll
+Microsoft.AspNetCore.WebUtilities.dll
+Microsoft.DotNet.PlatformAbstractions.dll
+Microsoft.Extensions.Caching.Abstractions.dll
+Microsoft.Extensions.Caching.Memory.dll
+Microsoft.Extensions.Configuration.Abstractions.dll
+Microsoft.Extensions.Configuration.Binder.dll
+Microsoft.Extensions.Configuration.dll
+Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Microsoft.Extensions.Configuration.FileExtensions.dll
+Microsoft.Extensions.Configuration.Json.dll
+Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Microsoft.Extensions.DependencyInjection.dll
+Microsoft.Extensions.DependencyModel.dll
+Microsoft.Extensions.DiagnosticAdapter.dll
+Microsoft.Extensions.FileProviders.Abstractions.dll
+Microsoft.Extensions.FileProviders.Composite.dll
+Microsoft.Extensions.FileProviders.Physical.dll
+Microsoft.Extensions.FileSystemGlobbing.dll
+Microsoft.Extensions.Globalization.CultureInfoCache.dll
+Microsoft.Extensions.Localization.Abstractions.dll
+Microsoft.Extensions.Localization.dll
+Microsoft.Extensions.Logging.Abstractions.dll
+Microsoft.Extensions.Logging.Console.dll
+Microsoft.Extensions.Logging.Debug.dll
+Microsoft.Extensions.Logging.dll
+Microsoft.Extensions.ObjectPool.dll
+Microsoft.Extensions.Options.ConfigurationExtensions.dll
+Microsoft.Extensions.Options.dll
+Microsoft.Extensions.PlatformAbstractions.dll
+Microsoft.Extensions.Primitives.dll
+Microsoft.Extensions.WebEncoders.dll
+Microsoft.Net.Http.Headers.dll
+Microsoft.VisualStudio.Web.BrowserLink.dll
+Newtonsoft.Json.dll
+refs
+SpikeWebApp.deps.json
+SpikeWebApp.dll
+SpikeWebApp.pdb
+SpikeWebApp.runtimeconfig.json
+System.Collections.NonGeneric.dll
+System.Collections.Specialized.dll
+System.ComponentModel.Primitives.dll
+System.ComponentModel.TypeConverter.dll
+System.Diagnostics.Contracts.dll
+System.Diagnostics.StackTrace.dll
+System.Net.WebSockets.dll
+System.Runtime.CompilerServices.Unsafe.dll
+System.Runtime.Serialization.Primitives.dll
+System.Text.Encodings.Web.dll
+Views
+web.config
+wwwroot
+[root@managedframework web]# dotnet spikewebapp.dll
+No executable found matching command "dotnet-spikewebapp.dll"
+[root@managedframework web]# dotnet SpikeWebApp.dll
+Hosting environment: Production
+Content root path: /home/managedframework/public_html/web
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+
+
+login as: webuser
+webuser@managedframework.dedicated.co.za's password:
+Last failed login: Mon Mar 13 18:11:10 SAST 2017 from fs.gocheapmobile.com on ssh:notty
+There were 4 failed login attempts since the last successful login.
+[webuser@managedframework ~]$ cd /etc/systemd/system
+[webuser@managedframework system]$ ls
+basic.target.wants                           httpd.service
+cpanellogd.service                           ipaliases.service
+cpanel_php_fpm.service                       kestrel-hellomvc.service
+cpanelquotaonboot.service                    kestrel-hello.service
+cpanel.service                               mailman.service
+cpdavd.service                               multi-user.target.wants
+cpgreylistd.service                          mysql.service
+cphulkd.service                              named.service.d
+cpipv6.service                               p0f.service
+dbus-org.fedoraproject.FirewallD1.service    proftpd.service
+dbus-org.freedesktop.NetworkManager.service  queueprocd.service
+dbus-org.freedesktop.nm-dispatcher.service   ror
+default.target                               securetmp.service
+default.target.wants                         smtpmailgidonly.service
+dnsadmin.service                             sockets.target.wants
+dovecot.service                              spamd.service
+exim.service                                 sysinit.target.wants
+fastmail.service                             system-update.target.wants
+getty.target.wants                           tailwatchd.service
+[webuser@managedframework system]$ vi kestrel-hellomvc.service
+[webuser@managedframework system]$ cd ..
+[webuser@managedframework systemd]$ cd ..
+[webuser@managedframework etc]$ cd httpd
+[webuser@managedframework httpd]$ cd conf.d
+[webuser@managedframework conf.d]$ ls
+dotnet.conf
+[webuser@managedframework conf.d]$ vi dotnet.conf
+<VirtlHost *:80>
+     ProxyPreserveHost On
+     ProxyPass / http://127.0.0.1:5000/web/
+     ProxyPassReverse / http://127.0.0.1:5000/web/
+     ErrorLog /var/log/httpd/managedframework.log
+     CustomLog /var/log/httpd/managedframework-access.log common
+</VirtualHost>
+ualHost *:80>
+     ProxyPreserveHost On
+     ProxyPass / http://127.0.0.1:5000/web/
+     ProxyPassReverse / http://127.0.0.1:5000/web/
+     ErrorLog /var/log/httpd/managedframework.log
+     CustomLog /var/log/httpd/managedframework-access.log common
+</VirtualHost>
+~
+~
+~
+~
+~
+~
+~
+~
+login as: root
+root@managedframework.dedicated.co.za's password:
+Last failed login: Fri Mar 24 14:36:07 SAST 2017 from 122.189.195.207 on ssh:not                                                                                                                                                             ty
+There were 112 failed login attempts since the last successful login.
+Last login: Fri Mar 24 12:02:01 2017 from 41.160.243.66
+[root@managedframework ~]# cd /etc/httpd/conf.d
+[root@managedframework conf.d]# ls
+reverse-proxy.conf
+[root@managedframework conf.d]# vi reverse-proxy.conf
+[root@managedframework conf.d]# cd /home
+[root@managedframework home]# cd managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+appsettings.Development.json                          Microsoft.AspNetCore.Localization.dll                  Microsoft.Extensions.Configuration.Abstractions.dll          Microsoft.Extensions.Primitives.dll
+appsettings.json                                      Microsoft.AspNetCore.Mvc.Abstractions.dll              Microsoft.Extensions.Configuration.Binder.dll                Microsoft.Extensions.WebEncoders.dll
+bower.json                                            Microsoft.AspNetCore.Mvc.ApiExplorer.dll               Microsoft.Extensions.Configuration.dll                       Microsoft.Net.Http.Headers.dll
+bundleconfig.json                                     Microsoft.AspNetCore.Mvc.Core.dll                      Microsoft.Extensions.Configuration.EnvironmentVariables.dll  Microsoft.VisualStudio.Web.BrowserLink.dll
+etc                                                   Microsoft.AspNetCore.Mvc.Cors.dll                      Microsoft.Extensions.Configuration.FileExtensions.dll        Newtonsoft.Json.dll
+Microsoft.ApplicationInsights.AspNetCore.dll          Microsoft.AspNetCore.Mvc.DataAnnotations.dll           Microsoft.Extensions.Configuration.Json.dll                  refs
+Microsoft.ApplicationInsights.dll                     Microsoft.AspNetCore.Mvc.dll                           Microsoft.Extensions.DependencyInjection.Abstractions.dll    SpikeWebApp.deps.json
+Microsoft.AspNetCore.Antiforgery.dll                  Microsoft.AspNetCore.Mvc.Formatters.Json.dll           Microsoft.Extensions.DependencyInjection.dll                 SpikeWebApp.dll
+Microsoft.AspNetCore.Authorization.dll                Microsoft.AspNetCore.Mvc.Localization.dll              Microsoft.Extensions.DependencyModel.dll                     SpikeWebApp.pdb
+Microsoft.AspNetCore.Cors.dll                         Microsoft.AspNetCore.Mvc.Razor.dll                     Microsoft.Extensions.DiagnosticAdapter.dll                   SpikeWebApp.runtimeconfig.json
+Microsoft.AspNetCore.Cryptography.Internal.dll        Microsoft.AspNetCore.Mvc.Razor.Host.dll                Microsoft.Extensions.FileProviders.Abstractions.dll          System.Collections.NonGeneric.dll
+Microsoft.AspNetCore.DataProtection.Abstractions.dll  Microsoft.AspNetCore.Mvc.TagHelpers.dll                Microsoft.Extensions.FileProviders.Composite.dll             System.Collections.Specialized.dll
+Microsoft.AspNetCore.DataProtection.dll               Microsoft.AspNetCore.Mvc.ViewFeatures.dll              Microsoft.Extensions.FileProviders.Physical.dll              System.ComponentModel.Primitives.dll
+Microsoft.AspNetCore.Diagnostics.Abstractions.dll     Microsoft.AspNetCore.Razor.dll                         Microsoft.Extensions.FileSystemGlobbing.dll                  System.ComponentModel.TypeConverter.dll
+Microsoft.AspNetCore.Diagnostics.dll                  Microsoft.AspNetCore.Razor.Runtime.dll                 Microsoft.Extensions.Globalization.CultureInfoCache.dll      System.Diagnostics.Contracts.dll
+Microsoft.AspNetCore.Hosting.Abstractions.dll         Microsoft.AspNetCore.ResponseCaching.Abstractions.dll  Microsoft.Extensions.Localization.Abstractions.dll           System.Diagnostics.StackTrace.dll
+Microsoft.AspNetCore.Hosting.dll                      Microsoft.AspNetCore.Routing.Abstractions.dll          Microsoft.Extensions.Localization.dll                        System.Net.WebSockets.dll
+Microsoft.AspNetCore.Hosting.Server.Abstractions.dll  Microsoft.AspNetCore.Routing.dll                       Microsoft.Extensions.Logging.Abstractions.dll                System.Runtime.CompilerServices.Unsafe.dll
+Microsoft.AspNetCore.Html.Abstractions.dll            Microsoft.AspNetCore.Server.IISIntegration.dll         Microsoft.Extensions.Logging.Console.dll                     System.Runtime.Serialization.Primitives.dll
+Microsoft.AspNetCore.Http.Abstractions.dll            Microsoft.AspNetCore.Server.Kestrel.dll                Microsoft.Extensions.Logging.Debug.dll                       System.Text.Encodings.Web.dll
+Microsoft.AspNetCore.Http.dll                         Microsoft.AspNetCore.StaticFiles.dll                   Microsoft.Extensions.Logging.dll                             Views
+Microsoft.AspNetCore.Http.Extensions.dll              Microsoft.AspNetCore.WebUtilities.dll                  Microsoft.Extensions.ObjectPool.dll                          web.config
+Microsoft.AspNetCore.Http.Features.dll                Microsoft.DotNet.PlatformAbstractions.dll              Microsoft.Extensions.Options.ConfigurationExtensions.dll     wwwroot
+Microsoft.AspNetCore.HttpOverrides.dll                Microsoft.Extensions.Caching.Abstractions.dll          Microsoft.Extensions.Options.dll
+Microsoft.AspNetCore.JsonPatch.dll                    Microsoft.Extensions.Caching.Memory.dll                Microsoft.Extensions.PlatformAbstractions.dll
+[root@managedframework public_html]# dotnet SpikeWebApp.dll
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^CApplication is shutting down...
+[root@managedframework public_html]# dotnet run
+Couldn't find a project to run. Ensure a project exists in  /home/managedframework/public_html.
+Or pass the path to the project using --project
+[root@managedframework public_html]# dotnet run SpiekWebApp.dll
+Couldn't find a project to run. Ensure a project exists in  /home/managedframework/public_html.
+Or pass the path to the project using --project
+[root@managedframework public_html]# cd /etc/apache2
+[root@managedframework apache2]# ls
+bin  conf  conf.d  conf.modules.d  logs  modules  run
+[root@managedframework apache2]# cd /
+[root@managedframework /]# sudo service apache2 restart
+Redirecting to /bin/systemctl restart  apache2.service
+Failed to restart apache2.service: Unit not found.
+[root@managedframework /]# sudo service apache restart
+Redirecting to /bin/systemctl restart  apache.service
+Failed to restart apache.service: Unit not found.
+[root@managedframework /]# sudo apache service restart
+sudo: apache: command not found
+[root@managedframework /]# apachectl restart
+[root@managedframework /]# apachectl status
+               Apache Server Status for localhost (via 127.0.0.1)
+
+   Server Version: Apache/2.4.25 (cPanel) OpenSSL/1.0.1e-fips
+   mod_bwlimited/1.4
+
+   Server MPM: prefork
+
+   Server Built: Mar 20 2017 15:23:03
+
+   --------------------------------------------------------------------------
+
+   Current Time: Friday, 24-Mar-2017 15:18:43 SAST
+
+   Restart Time: Friday, 24-Mar-2017 15:18:38 SAST
+
+   Parent Server Config. Generation: 5
+
+   Parent Server MPM Generation: 4
+
+   Server uptime: 4 seconds
+
+   Server load: 0.28 0.23 0.16
+
+   Total accesses: 0 - Total Traffic: 0 kB
+
+   CPU Usage: u0 s0 cu0 cs0
+
+   0 requests/sec - 0 B/second -
+
+   1 requests currently being processed, 4 idle workers
+
+ W____...........................................................
+ ................................................................
+ ......................
+
+   Scoreboard Key:
+   "_" Waiting for Connection, "S" Starting up, "R" Reading Request,
+   "W" Sending Reply, "K" Keepalive (read), "D" DNS Lookup,
+   "C" Closing connection, "L" Logging, "G" Gracefully finishing,
+   "I" Idle cleanup of worker, "." Open slot with no current process
+[root@managedframework /]# cd home
+[root@managedframework home]# cd managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+appsettings.Development.json                          Microsoft.AspNetCore.Localization.dll                  Microsoft.Extensions.Configuration.Abstractions.dll          Microsoft.Extensions.Primitives.dll
+appsettings.json                                      Microsoft.AspNetCore.Mvc.Abstractions.dll              Microsoft.Extensions.Configuration.Binder.dll                Microsoft.Extensions.WebEncoders.dll
+bower.json                                            Microsoft.AspNetCore.Mvc.ApiExplorer.dll               Microsoft.Extensions.Configuration.dll                       Microsoft.Net.Http.Headers.dll
+bundleconfig.json                                     Microsoft.AspNetCore.Mvc.Core.dll                      Microsoft.Extensions.Configuration.EnvironmentVariables.dll  Microsoft.VisualStudio.Web.BrowserLink.dll
+etc                                                   Microsoft.AspNetCore.Mvc.Cors.dll                      Microsoft.Extensions.Configuration.FileExtensions.dll        Newtonsoft.Json.dll
+Microsoft.ApplicationInsights.AspNetCore.dll          Microsoft.AspNetCore.Mvc.DataAnnotations.dll           Microsoft.Extensions.Configuration.Json.dll                  refs
+Microsoft.ApplicationInsights.dll                     Microsoft.AspNetCore.Mvc.dll                           Microsoft.Extensions.DependencyInjection.Abstractions.dll    SpikeWebApp.deps.json
+Microsoft.AspNetCore.Antiforgery.dll                  Microsoft.AspNetCore.Mvc.Formatters.Json.dll           Microsoft.Extensions.DependencyInjection.dll                 SpikeWebApp.dll
+Microsoft.AspNetCore.Authorization.dll                Microsoft.AspNetCore.Mvc.Localization.dll              Microsoft.Extensions.DependencyModel.dll                     SpikeWebApp.pdb
+Microsoft.AspNetCore.Cors.dll                         Microsoft.AspNetCore.Mvc.Razor.dll                     Microsoft.Extensions.DiagnosticAdapter.dll                   SpikeWebApp.runtimeconfig.json
+Microsoft.AspNetCore.Cryptography.Internal.dll        Microsoft.AspNetCore.Mvc.Razor.Host.dll                Microsoft.Extensions.FileProviders.Abstractions.dll          System.Collections.NonGeneric.dll
+Microsoft.AspNetCore.DataProtection.Abstractions.dll  Microsoft.AspNetCore.Mvc.TagHelpers.dll                Microsoft.Extensions.FileProviders.Composite.dll             System.Collections.Specialized.dll
+Microsoft.AspNetCore.DataProtection.dll               Microsoft.AspNetCore.Mvc.ViewFeatures.dll              Microsoft.Extensions.FileProviders.Physical.dll              System.ComponentModel.Primitives.dll
+Microsoft.AspNetCore.Diagnostics.Abstractions.dll     Microsoft.AspNetCore.Razor.dll                         Microsoft.Extensions.FileSystemGlobbing.dll                  System.ComponentModel.TypeConverter.dll
+Microsoft.AspNetCore.Diagnostics.dll                  Microsoft.AspNetCore.Razor.Runtime.dll                 Microsoft.Extensions.Globalization.CultureInfoCache.dll      System.Diagnostics.Contracts.dll
+Microsoft.AspNetCore.Hosting.Abstractions.dll         Microsoft.AspNetCore.ResponseCaching.Abstractions.dll  Microsoft.Extensions.Localization.Abstractions.dll           System.Diagnostics.StackTrace.dll
+Microsoft.AspNetCore.Hosting.dll                      Microsoft.AspNetCore.Routing.Abstractions.dll          Microsoft.Extensions.Localization.dll                        System.Net.WebSockets.dll
+Microsoft.AspNetCore.Hosting.Server.Abstractions.dll  Microsoft.AspNetCore.Routing.dll                       Microsoft.Extensions.Logging.Abstractions.dll                System.Runtime.CompilerServices.Unsafe.dll
+Microsoft.AspNetCore.Html.Abstractions.dll            Microsoft.AspNetCore.Server.IISIntegration.dll         Microsoft.Extensions.Logging.Console.dll                     System.Runtime.Serialization.Primitives.dll
+Microsoft.AspNetCore.Http.Abstractions.dll            Microsoft.AspNetCore.Server.Kestrel.dll                Microsoft.Extensions.Logging.Debug.dll                       System.Text.Encodings.Web.dll
+Microsoft.AspNetCore.Http.dll                         Microsoft.AspNetCore.StaticFiles.dll                   Microsoft.Extensions.Logging.dll                             Views
+Microsoft.AspNetCore.Http.Extensions.dll              Microsoft.AspNetCore.WebUtilities.dll                  Microsoft.Extensions.ObjectPool.dll                          web.config
+Microsoft.AspNetCore.Http.Features.dll                Microsoft.DotNet.PlatformAbstractions.dll              Microsoft.Extensions.Options.ConfigurationExtensions.dll     wwwroot
+Microsoft.AspNetCore.HttpOverrides.dll                Microsoft.Extensions.Caching.Abstractions.dll          Microsoft.Extensions.Options.dll
+Microsoft.AspNetCore.JsonPatch.dll                    Microsoft.Extensions.Caching.Memory.dll                Microsoft.Extensions.PlatformAbstractions.dll
+[root@managedframework public_html]# dotnet SpikeWebApp.dll
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^CApplication is shutting down...
+[root@managedframework public_html]# sudo ym -y install httpd mod_ssl
+sudo: ym: command not found
+[root@managedframework public_html]# sudo yum -y install httpd mod_ssl
+Loaded plugins: fastestmirror, universal-hooks
+Loading mirror speeds from cached hostfile
+ * EA4: 169.255.59.74
+ * base: repos-jnb.psychz.net
+ * epel: mirror.wbs.co.za
+ * extras: repos-jnb.psychz.net
+ * updates: repos-jnb.psychz.net
+No package httpd available.
+No package mod_ssl available.
+Error: Nothing to do
+[root@managedframework public_html]# cd /etc/httpd/conf.modules.d
+-bash: cd: /etc/httpd/conf.modules.d: No such file or directory
+[root@managedframework public_html]# cd /etc
+[root@managedframework etc]# cd httpd
+[root@managedframework httpd]# ls
+conf.d
+[root@managedframework httpd]# sudo service httpd configtest
+Syntax OK
+[root@managedframework httpd]# cd conf.d
+[root@managedframework conf.d]# ls
+reverse-proxy.conf
+[root@managedframework conf.d]# vi dotnet-reverse-proxy.conf
+[root@managedframework conf.d]# sudo service httpd configtest
+Syntax OK
+[root@managedframework conf.d]# sudo systemctl restart httpd
+[root@managedframework conf.d]# sudo systemctl enable httpd
+[root@managedframework conf.d]# cd /home
+[root@managedframework home]# cd managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+appsettings.Development.json                          Microsoft.AspNetCore.Localization.dll                  Microsoft.Extensions.Configuration.Abstractions.dll          Microsoft.Extensions.Primitives.dll
+appsettings.json                                      Microsoft.AspNetCore.Mvc.Abstractions.dll              Microsoft.Extensions.Configuration.Binder.dll                Microsoft.Extensions.WebEncoders.dll
+bower.json                                            Microsoft.AspNetCore.Mvc.ApiExplorer.dll               Microsoft.Extensions.Configuration.dll                       Microsoft.Net.Http.Headers.dll
+bundleconfig.json                                     Microsoft.AspNetCore.Mvc.Core.dll                      Microsoft.Extensions.Configuration.EnvironmentVariables.dll  Microsoft.VisualStudio.Web.BrowserLink.dll
+etc                                                   Microsoft.AspNetCore.Mvc.Cors.dll                      Microsoft.Extensions.Configuration.FileExtensions.dll        Newtonsoft.Json.dll
+Microsoft.ApplicationInsights.AspNetCore.dll          Microsoft.AspNetCore.Mvc.DataAnnotations.dll           Microsoft.Extensions.Configuration.Json.dll                  refs
+Microsoft.ApplicationInsights.dll                     Microsoft.AspNetCore.Mvc.dll                           Microsoft.Extensions.DependencyInjection.Abstractions.dll    SpikeWebApp.deps.json
+Microsoft.AspNetCore.Antiforgery.dll                  Microsoft.AspNetCore.Mvc.Formatters.Json.dll           Microsoft.Extensions.DependencyInjection.dll                 SpikeWebApp.dll
+Microsoft.AspNetCore.Authorization.dll                Microsoft.AspNetCore.Mvc.Localization.dll              Microsoft.Extensions.DependencyModel.dll                     SpikeWebApp.pdb
+Microsoft.AspNetCore.Cors.dll                         Microsoft.AspNetCore.Mvc.Razor.dll                     Microsoft.Extensions.DiagnosticAdapter.dll                   SpikeWebApp.runtimeconfig.json
+Microsoft.AspNetCore.Cryptography.Internal.dll        Microsoft.AspNetCore.Mvc.Razor.Host.dll                Microsoft.Extensions.FileProviders.Abstractions.dll          System.Collections.NonGeneric.dll
+Microsoft.AspNetCore.DataProtection.Abstractions.dll  Microsoft.AspNetCore.Mvc.TagHelpers.dll                Microsoft.Extensions.FileProviders.Composite.dll             System.Collections.Specialized.dll
+Microsoft.AspNetCore.DataProtection.dll               Microsoft.AspNetCore.Mvc.ViewFeatures.dll              Microsoft.Extensions.FileProviders.Physical.dll              System.ComponentModel.Primitives.dll
+Microsoft.AspNetCore.Diagnostics.Abstractions.dll     Microsoft.AspNetCore.Razor.dll                         Microsoft.Extensions.FileSystemGlobbing.dll                  System.ComponentModel.TypeConverter.dll
+Microsoft.AspNetCore.Diagnostics.dll                  Microsoft.AspNetCore.Razor.Runtime.dll                 Microsoft.Extensions.Globalization.CultureInfoCache.dll      System.Diagnostics.Contracts.dll
+Microsoft.AspNetCore.Hosting.Abstractions.dll         Microsoft.AspNetCore.ResponseCaching.Abstractions.dll  Microsoft.Extensions.Localization.Abstractions.dll           System.Diagnostics.StackTrace.dll
+Microsoft.AspNetCore.Hosting.dll                      Microsoft.AspNetCore.Routing.Abstractions.dll          Microsoft.Extensions.Localization.dll                        System.Net.WebSockets.dll
+Microsoft.AspNetCore.Hosting.Server.Abstractions.dll  Microsoft.AspNetCore.Routing.dll                       Microsoft.Extensions.Logging.Abstractions.dll                System.Runtime.CompilerServices.Unsafe.dll
+Microsoft.AspNetCore.Html.Abstractions.dll            Microsoft.AspNetCore.Server.IISIntegration.dll         Microsoft.Extensions.Logging.Console.dll                     System.Runtime.Serialization.Primitives.dll
+Microsoft.AspNetCore.Http.Abstractions.dll            Microsoft.AspNetCore.Server.Kestrel.dll                Microsoft.Extensions.Logging.Debug.dll                       System.Text.Encodings.Web.dll
+Microsoft.AspNetCore.Http.dll                         Microsoft.AspNetCore.StaticFiles.dll                   Microsoft.Extensions.Logging.dll                             Views
+Microsoft.AspNetCore.Http.Extensions.dll              Microsoft.AspNetCore.WebUtilities.dll                  Microsoft.Extensions.ObjectPool.dll                          web.config
+Microsoft.AspNetCore.Http.Features.dll                Microsoft.DotNet.PlatformAbstractions.dll              Microsoft.Extensions.Options.ConfigurationExtensions.dll     wwwroot
+Microsoft.AspNetCore.HttpOverrides.dll                Microsoft.Extensions.Caching.Abstractions.dll          Microsoft.Extensions.Options.dll
+Microsoft.AspNetCore.JsonPatch.dll                    Microsoft.Extensions.Caching.Memory.dll                Microsoft.Extensions.PlatformAbstractions.dll
+[root@managedframework public_html]# dotnet SpikeWebApp.dll
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^CApplication is shutting down...
+[root@managedframework public_html]# dotnet restore
+MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
+[root@managedframework public_html]# dotnet SpikeWebApp.dll restore
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^CApplication is shutting down...
+[root@managedframework public_html]# dotnet restore SpikeWebApp.dll
+/home/managedframework/public_html/SpikeWebApp.dll(1,1): error MSB4025: The project file could not be loaded. Data at the root level is invalid. Line 1, position 1.
+[root@managedframework public_html]# sudo dotnet restore
+sudo: dotnet: command not found
+[root@managedframework public_html]# sudo a2enmod proxy_html
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod proxy
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod proxy_http
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod proxy_ajp
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod rewrite
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod deflate
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod headers
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod proxy_balancer
+sudo: a2enmod: command not found
+[root@managedframework public_html]# sudo a2enmod proxy_connect
+sudo: a2enmod: command not found
+[root@managedframework public_html]# yum remove nginx
+Loaded plugins: fastestmirror, universal-hooks
+Resolving Dependencies
+--> Running transaction check
+---> Package nginx.x86_64 1:1.10.2-1.el7 will be erased
+--> Processing Dependency: nginx for package: 1:nginx-mod-http-xslt-filter-1.10.2-1.el7.x86_64
+--> Processing Dependency: nginx for package: 1:nginx-mod-http-geoip-1.10.2-1.el7.x86_64
+--> Processing Dependency: nginx for package: 1:nginx-mod-http-perl-1.10.2-1.el7.x86_64
+--> Processing Dependency: nginx for package: 1:nginx-mod-http-image-filter-1.10.2-1.el7.x86_64
+--> Processing Dependency: nginx for package: 1:nginx-mod-mail-1.10.2-1.el7.x86_64
+--> Processing Dependency: nginx for package: 1:nginx-mod-stream-1.10.2-1.el7.x86_64
+--> Running transaction check
+---> Package nginx-mod-http-geoip.x86_64 1:1.10.2-1.el7 will be erased
+--> Processing Dependency: nginx-mod-http-geoip = 1:1.10.2-1.el7 for package: 1:nginx-all-modules-1.10.2-1.el7.noarch
+---> Package nginx-mod-http-image-filter.x86_64 1:1.10.2-1.el7 will be erased
+---> Package nginx-mod-http-perl.x86_64 1:1.10.2-1.el7 will be erased
+---> Package nginx-mod-http-xslt-filter.x86_64 1:1.10.2-1.el7 will be erased
+---> Package nginx-mod-mail.x86_64 1:1.10.2-1.el7 will be erased
+---> Package nginx-mod-stream.x86_64 1:1.10.2-1.el7 will be erased
+--> Running transaction check
+---> Package nginx-all-modules.noarch 1:1.10.2-1.el7 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=============================================================================================================================================================================================================================================
+ Package                                                                Arch                                              Version                                                     Repository                                        Size
+=============================================================================================================================================================================================================================================
+Removing:
+ nginx                                                                  x86_64                                            1:1.10.2-1.el7                                              @epel                                            1.4 M
+Removing for dependencies:
+ nginx-all-modules                                                      noarch                                            1:1.10.2-1.el7                                              @epel                                            0.0
+ nginx-mod-http-geoip                                                   x86_64                                            1:1.10.2-1.el7                                              @epel                                             21 k
+ nginx-mod-http-image-filter                                            x86_64                                            1:1.10.2-1.el7                                              @epel                                             24 k
+ nginx-mod-http-perl                                                    x86_64                                            1:1.10.2-1.el7                                              @epel                                             51 k
+ nginx-mod-http-xslt-filter                                             x86_64                                            1:1.10.2-1.el7                                              @epel                                             24 k
+ nginx-mod-mail                                                         x86_64                                            1:1.10.2-1.el7                                              @epel                                             99 k
+ nginx-mod-stream                                                       x86_64                                            1:1.10.2-1.el7                                              @epel                                             79 k
+
+Transaction Summary
+=============================================================================================================================================================================================================================================
+Remove  1 Package (+7 Dependent packages)
+
+Installed size: 1.7 M
+Is this ok [y/N]: y
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : 1:nginx-mod-http-geoip-1.10.2-1.el7.x86_64                                                                                                                                                                                1/8
+  Erasing    : 1:nginx-mod-http-image-filter-1.10.2-1.el7.x86_64                                                                                                                                                                         2/8
+  Erasing    : 1:nginx-mod-http-perl-1.10.2-1.el7.x86_64                                                                                                                                                                                 3/8
+  Erasing    : 1:nginx-mod-mail-1.10.2-1.el7.x86_64                                                                                                                                                                                      4/8
+  Erasing    : 1:nginx-mod-stream-1.10.2-1.el7.x86_64                                                                                                                                                                                    5/8
+  Erasing    : 1:nginx-all-modules-1.10.2-1.el7.noarch                                                                                                                                                                                   6/8
+  Erasing    : 1:nginx-mod-http-xslt-filter-1.10.2-1.el7.x86_64                                                                                                                                                                          7/8
+  Erasing    : 1:nginx-1.10.2-1.el7.x86_64                                                                                                                                                                                               8/8
+  Verifying  : 1:nginx-mod-http-xslt-filter-1.10.2-1.el7.x86_64                                                                                                                                                                          1/8
+  Verifying  : 1:nginx-mod-mail-1.10.2-1.el7.x86_64                                                                                                                                                                                      2/8
+  Verifying  : 1:nginx-mod-stream-1.10.2-1.el7.x86_64                                                                                                                                                                                    3/8
+  Verifying  : 1:nginx-mod-http-geoip-1.10.2-1.el7.x86_64                                                                                                                                                                                4/8
+  Verifying  : 1:nginx-mod-http-image-filter-1.10.2-1.el7.x86_64                                                                                                                                                                         5/8
+  Verifying  : 1:nginx-mod-http-perl-1.10.2-1.el7.x86_64                                                                                                                                                                                 6/8
+  Verifying  : 1:nginx-1.10.2-1.el7.x86_64                                                                                                                                                                                               7/8
+  Verifying  : 1:nginx-all-modules-1.10.2-1.el7.noarch                                                                                                                                                                                   8/8
+
+Removed:
+  nginx.x86_64 1:1.10.2-1.el7
+
+Dependency Removed:
+  nginx-all-modules.noarch 1:1.10.2-1.el7   nginx-mod-http-geoip.x86_64 1:1.10.2-1.el7   nginx-mod-http-image-filter.x86_64 1:1.10.2-1.el7   nginx-mod-http-perl.x86_64 1:1.10.2-1.el7   nginx-mod-http-xslt-filter.x86_64 1:1.10.2-1.el7
+  nginx-mod-mail.x86_64 1:1.10.2-1.el7      nginx-mod-stream.x86_64 1:1.10.2-1.el7
+
+Complete!
+[root@managedframework public_html]# sudo systemctl restart httpd
+[root@managedframework public_html]# sudo systemctl enalble httpd
+Unknown operation 'enalble'.
+[root@managedframework public_html]# sudo systemctl enable httpd
+[root@managedframework public_html]# cd /etc/httpd/conf.d
+[root@managedframework conf.d]# ls
+dotnet-reverse-proxy.conf  reverse-proxy.conf
+[root@managedframework conf.d]# cd /var/log
+[root@managedframework log]# ls
+anaconda.log  btmp-20170306       cron-20170312  exim_mainlog               exim_paniclog-20170319.gz   firewalld         maillog-20170312   messages-20170319  sa               spooler           tuned                 yum.log
+apache2       chkservd.log        cron-20170319  exim_mainlog-20170312.gz   exim_rejectlog              grubby            maillog-20170319   named              secure           spooler-20170306  wpa_supplicant.log
+audit         cpanel-install.log  dcpumon        exim_mainlog-20170319.gz   exim_rejectlog-20170312.gz  lastlog           messages           nginx              secure-20170306  spooler-20170312  wtmp
+boot.log      cron                dmesg          exim_paniclog              exim_rejectlog-20170319.gz  maillog           messages-20170306  ppp                secure-20170312  spooler-20170319  xferlog.offset
+btmp          cron-20170306       dmesg.old      exim_paniclog-20170312.gz  faillog                     maillog-20170306  messages-20170312  quota_enable.log   secure-20170319  tallylog          xferlog.offsetftpsep
+[root@managedframework log]# cd httpd
+-bash: cd: httpd: No such file or directory
+[root@managedframework log]# sudo yum update netcore
+Loaded plugins: fastestmirror, universal-hooks
+Loading mirror speeds from cached hostfile
+ * EA4: 169.255.59.74
+ * base: repos-jnb.psychz.net
+ * epel: mirror.wbs.co.za
+ * extras: repos-jnb.psychz.net
+ * updates: repos-jnb.psychz.net
+No Match for argument: netcore
+No package netcore available.
+No packages marked for update
+[root@managedframework log]# sudo yum install libunwind libicu
+Loaded plugins: fastestmirror, universal-hooks
+Loading mirror speeds from cached hostfile
+ * EA4: 169.255.59.74
+ * base: repos-jnb.psychz.net
+ * epel: mirror.wbs.co.za
+ * extras: repos-jnb.psychz.net
+ * updates: repos-jnb.psychz.net
+Package 2:libunwind-1.1-5.el7_2.2.x86_64 already installed and latest version
+Package libicu-50.1.2-15.el7.x86_64 already installed and latest version
+Nothing to do
+[root@managedframework log]# curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=843449
+[root@managedframework log]# sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+[root@managedframework log]# sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+ln: failed to create symbolic link ‘/usr/local/bin/dotnet’: File exists
+[root@managedframework log]# cd /
+[root@managedframework /]# cd hwapp
+-bash: cd: hwapp: No such file or directory
+[root@managedframework /]# dotnet new console -o hwapp
+Content generation time: 336,5385 ms
+The template "Console Application" created successfully.
+[root@managedframework /]# cd hwapp
+[root@managedframework hwapp]# dotnet restore
+  Restoring packages for /hwapp/hwapp.csproj...
+  Generating MSBuild file /hwapp/obj/hwapp.csproj.nuget.g.props.
+  Generating MSBuild file /hwapp/obj/hwapp.csproj.nuget.g.targets.
+  Writing lock file to disk. Path: /hwapp/obj/project.assets.json
+  Restore completed in 7,07 sec for /hwapp/hwapp.csproj.
+
+  NuGet Config files used:
+      /root/.nuget/NuGet/NuGet.Config
+
+  Feeds used:
+      https://api.nuget.org/v3/index.json
+[root@managedframework hwapp]# dotnet run
+Hello World!
+[root@managedframework hwapp]# cd /home/managedframework
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+etc
+[root@managedframework public_html]# dotnet new web
+Content generation time: 173,105 ms
+The template "ASP.NET Core Empty" created successfully.
+[root@managedframework public_html]# dotnet restore
+  Restoring packages for /home/managedframework/public_html/public_html.csproj...
+  Generating MSBuild file /home/managedframework/public_html/obj/public_html.csproj.nuget.g.props.
+  Generating MSBuild file /home/managedframework/public_html/obj/public_html.csproj.nuget.g.targets.
+  Writing lock file to disk. Path: /home/managedframework/public_html/obj/project.assets.json
+  Restore completed in 2,33 sec for /home/managedframework/public_html/public_html.csproj.
+
+  NuGet Config files used:
+      /root/.nuget/NuGet/NuGet.Config
+
+  Feeds used:
+      https://api.nuget.org/v3/index.json
+[root@managedframework public_html]# dotnet run
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^C
+[root@managedframework public_html]# Application is shutting down...
+
+[root@managedframework public_html]# dotnet new
+Template Instantiation Commands for .NET Core CLI.
+
+Usage: dotnet new [arguments] [options]
+
+Arguments:
+  template  The template to instantiate.
+
+Options:
+  -l|--list         List templates containing the specified name.
+  -lang|--language  Specifies the language of the template to create
+  -n|--name         The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o|--output       Location to place the generated output.
+  -h|--help         Displays help for this command.
+  -all|--show-all   Shows all templates
+
+
+Templates                 Short Name      Language      Tags
+----------------------------------------------------------------------
+Console Application       console         [C#], F#      Common/Console
+Class library             classlib        [C#], F#      Common/Library
+Unit Test Project         mstest          [C#], F#      Test/MSTest
+xUnit Test Project        xunit           [C#], F#      Test/xUnit
+ASP.NET Core Empty        web             [C#]          Web/Empty
+ASP.NET Core Web App      mvc             [C#], F#      Web/MVC
+ASP.NET Core Web API      webapi          [C#]          Web/WebAPI
+Solution File             sln                           Solution
+
+Examples:
+    dotnet new mvc --auth None --framework netcoreapp1.1
+    dotnet new sln
+    dotnet new --help
+[root@managedframework public_html]# ls
+bin  etc  obj
+[root@managedframework public_html]# dotnet new mvc
+Content generation time: 473,1449 ms
+The template "ASP.NET Core Web App" created successfully.
+[root@managedframework public_html]# dotnet restore
+  Restoring packages for /home/managedframework/public_html/public_html.csproj...
+  Writing lock file to disk. Path: /home/managedframework/public_html/obj/project.assets.json
+  Restore completed in 2,74 sec for /home/managedframework/public_html/public_html.csproj.
+
+  NuGet Config files used:
+      /root/.nuget/NuGet/NuGet.Config
+
+  Feeds used:
+      https://api.nuget.org/v3/index.json
+[root@managedframework public_html]# dotnet run
+Hosting environment: Production
+Content root path: /home/managedframework/public_html
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+^C
+[root@managedframework public_html]# Application is shutting down...
+
+[root@managedframework public_html]# ls
+appsettings.Development.json  appsettings.json  bin  bower.json  bundleconfig.json  Controllers  etc  obj  Program.cs  public_html.csproj  Startup.cs  Views  wwwroot
+[root@managedframework public_html]# vi Program.cs
+[root@managedframework public_html]# dotnet run
+
+Unhandled Exception: System.IO.FileNotFoundException: The configuration file 'appsettings.json' was not found and is not optional. The physical path is '/home/managedframework/public_html/bin/Debug/netcoreapp1.1/appsettings.json'.
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+   at Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+   at public_html.Startup..ctor(IHostingEnvironment env) in /home/managedframework/public_html/Startup.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.AspNetCore.Hosting.Internal.StartupLoader.LoadMethods(IServiceProvider hostingServiceProvider, Type startupType, String environmentName)
+   at Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.<>c__DisplayClass1_0.<UseStartup>b__1(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.<>c__DisplayClass16_0.<RealizeService>b__0(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureStartup()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHostBuilder.Build()
+   at public_html.Program.Main(String[] args) in /home/managedframework/public_html/Program.cs:line 15
+[root@managedframework public_html]# vi Program.cs
+[root@managedframework public_html]# vi Startup.cs
+[root@managedframework public_html]# rm -r
+rm: missing operand
+Try 'rm --help' for more information.
+[root@managedframework public_html]# sudo rm -f public_html/*
+[root@managedframework public_html]# ls
+appsettings.Development.json  appsettings.json  bin  bower.json  bundleconfig.json  Controllers  etc  obj  Program.cs  public_html.csproj  Startup.cs  Views  wwwroot
+[root@managedframework public_html]# cd ..
+[root@managedframework managedframework]# rm -r public_html/*
+rm: remove regular file ‘public_html/appsettings.Development.json’? y
+rm: remove regular file ‘public_html/appsettings.json’? y
+rm: descend into directory ‘public_html/bin’? y
+rm: descend into directory ‘public_html/bin/Debug’? y
+rm: descend into directory ‘public_html/bin/Debug/netcoreapp1.1’? y
+rm: remove regular file ‘public_html/bin/Debug/netcoreapp1.1/public_html.pdb’? y
+rm: remove regular file ‘public_html/bin/Debug/netcoreapp1.1/public_html.deps.json’? y
+rm: remove regular file ‘public_html/bin/Debug/netcoreapp1.1/public_html.runtimeconfig.json’? y
+rm: remove regular file ‘public_html/bin/Debug/netcoreapp1.1/public_html.runtimeconfig.dev.json’? y
+rm: remove regular file ‘public_html/bin/Debug/netcoreapp1.1/public_html.dll’? y
+rm: remove directory ‘public_html/bin/Debug/netcoreapp1.1’? yy
+rm: remove directory ‘public_html/bin/Debug’? y
+rm: remove directory ‘public_html/bin’? y
+rm: remove regular file ‘public_html/bower.json’? y
+rm: remove regular file ‘public_html/bundleconfig.json’? y
+rm: descend into directory ‘public_html/Controllers’? y
+rm: remove regular file ‘public_html/Controllers/HomeController.cs’? y
+rm: remove directory ‘public_html/Controllers’? y
+rm: descend into directory ‘public_html/etc’? y
+rm: descend into directory ‘public_html/etc/httpd’? y
+rm: remove directory ‘public_html/etc/httpd/conf.d’? y
+rm: remove directory ‘public_html/etc/httpd’? y
+rm: remove directory ‘public_html/etc’? y
+rm: descend into directory ‘public_html/obj’? y
+rm: remove regular file ‘public_html/obj/project.assets.json’? y
+rm: remove regular file ‘public_html/obj/public_html.csproj.nuget.g.targets’? y
+rm: remove regular file ‘public_html/obj/public_html.csproj.nuget.g.props’? y
+rm: descend into directory ‘public_html/obj/Debug’? y
+rm: descend into directory ‘public_html/obj/Debug/netcoreapp1.1’? y
+rm: remove regular file ‘public_html/obj/Debug/netcoreapp1.1/public_html.csproj.FileListAbsolute.txt’? y
+rm: remove regular file ‘public_html/obj/Debug/netcoreapp1.1/public_html.pdb’? y
+rm: remove regular file ‘public_html/obj/Debug/netcoreapp1.1/CoreCompileInputs.cache’? y
+rm: remove regular file ‘public_html/obj/Debug/netcoreapp1.1/public_html.AssemblyInfo.cs’? y
+rm: remove regular file ‘public_html/obj/Debug/netcoreapp1.1/public_html.dll’? y
+rm: remove directory ‘public_html/obj/Debug/netcoreapp1.1’? y
+rm: remove directory ‘public_html/obj/Debug’? y
+rm: remove directory ‘public_html/obj’? y
+rm: remove regular file ‘public_html/Program.cs’? y
+rm: remove regular file ‘public_html/public_html.csproj’? y
+rm: remove regular file ‘public_html/Startup.cs’? y
+rm: descend into directory ‘public_html/Views’? y
+rm: descend into directory ‘public_html/Views/Shared’? y
+rm: remove regular file ‘public_html/Views/Shared/Error.cshtml’? y
+rm: remove regular file ‘public_html/Views/Shared/_Layout.cshtml’? y
+rm: remove directory ‘public_html/Views/Shared’? y
+rm: descend into directory ‘public_html/Views/Home’? y
+rm: remove regular file ‘public_html/Views/Home/Index.cshtml’? y
+rm: remove regular file ‘public_html/Views/Home/Contact.cshtml’? y
+rm: remove regular file ‘public_html/Views/Home/About.cshtml’? y
+rm: remove directory ‘public_html/Views/Home’? y
+rm: remove regular file ‘public_html/Views/_ViewStart.cshtml’? y
+rm: remove regular file ‘public_html/Views/_ViewImports.cshtml’? y
+rm: remove directory ‘public_html/Views’? y
+rm: descend into directory ‘public_html/wwwroot’? y
+rm: remove regular file ‘public_html/wwwroot/favicon.ico’? y
+rm: descend into directory ‘public_html/wwwroot/js’? y
+rm: remove regular file ‘public_html/wwwroot/js/site.js’? y
+rm: remove regular empty file ‘public_html/wwwroot/js/site.min.js’? y
+rm: remove directory ‘public_html/wwwroot/js’? y
+rm: descend into directory ‘public_html/wwwroot/images’? y
+rm: remove regular file ‘public_html/wwwroot/images/banner3.svg’? y
+rm: remove regular file ‘public_html/wwwroot/images/banner4.svg’? y
+rm: remove regular file ‘public_html/wwwroot/images/banner2.svg’? y
+rm: remove regular file ‘public_html/wwwroot/images/banner1.svg’? y
+rm: remove directory ‘public_html/wwwroot/images’? y
+rm: descend into directory ‘public_html/wwwroot/css’? y
+yrm: remove regular file ‘public_html/wwwroot/css/site.min.css’? y
+rm: remove regular file ‘public_html/wwwroot/css/site.css’? y
+rm: remove directory ‘public_html/wwwroot/css’? y
+rm: descend into directory ‘public_html/wwwroot/lib’? yy
+rm: descend into directory ‘public_html/wwwroot/lib/jquery-validation-unobtrusive’?
+rm: descend into directory ‘public_html/wwwroot/lib/jquery’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery/LICENSE.txt’? y
+rm: descend into directory ‘public_html/wwwroot/lib/jquery/dist’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery/dist/jquery.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery/dist/jquery.min.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery/dist/jquery.min.map’? y
+rm: remove directory ‘public_html/wwwroot/lib/jquery/dist’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery/.bower.json’? y
+rm: remove directory ‘public_html/wwwroot/lib/jquery’? y
+rm: descend into directory ‘public_html/wwwroot/lib/bootstrap’? y
+rm: descend into directory ‘public_html/wwwroot/lib/bootstrap/dist’? y
+rm: descend into directory ‘public_html/wwwroot/lib/bootstrap/dist/js’? yy
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/js/bootstrap.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/js/npm.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js’? y
+rm: remove directory ‘public_html/wwwroot/lib/bootstrap/dist/js’? yy
+rm: descend into directory ‘public_html/wwwroot/lib/bootstrap/dist/css’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap.css’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map’? y
+rm: remove directory ‘public_html/wwwroot/lib/bootstrap/dist/css’? y
+rm: descend into directory ‘public_html/wwwroot/lib/bootstrap/dist/fonts’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff’? yy
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf’? y
+rm: remove directory ‘public_html/wwwroot/lib/bootstrap/dist/fonts’? y
+rm: remove directory ‘public_html/wwwroot/lib/bootstrap/dist’? y
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/LICENSE’? yy
+rm: remove regular file ‘public_html/wwwroot/lib/bootstrap/.bower.json’? y
+rm: remove directory ‘public_html/wwwroot/lib/bootstrap’? yy
+rm: descend into directory ‘public_html/wwwroot/lib/jquery-validation’? y
+rm: descend into directory ‘public_html/wwwroot/lib/jquery-validation/dist’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/dist/additional-methods.min.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/dist/jquery.validate.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/dist/additional-methods.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js’? y
+rm: remove directory ‘public_html/wwwroot/lib/jquery-validation/dist’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/.bower.json’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation/LICENSE.md’? y
+rm: remove directory ‘public_html/wwwroot/lib/jquery-validation’? y
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# yy
+-bash: yy: command not found
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+wwwroot
+[root@managedframework public_html]# cd ..
+[root@managedframework managedframework]# rm -R public_html/*
+rm: descend into directory ‘public_html/wwwroot’? y
+rm: descend into directory ‘public_html/wwwroot/lib’? y
+rm: descend into directory ‘public_html/wwwroot/lib/jquery-validation-unobtrusive’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js’? y
+rm: remove regular file ‘public_html/wwwroot/lib/jquery-validation-unobtrusive/.bower.json’? y
+rm: remove directory ‘public_html/wwwroot/lib/jquery-validation-unobtrusive’? y
+rm: remove directory ‘public_html/wwwroot/lib’? y
+rm: remove directory ‘public_html/wwwroot’? y
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# y
+-bash: y: command not found
+[root@managedframework managedframework]# cd public_html
+[root@managedframework public_html]# ls
+[root@managedframework public_html]# cd /
+[root@managedframework /]# sudo yum update -y
+Loaded plugins: fastestmirror, universal-hooks
+EA4                                                                                                                                                                                                                   | 2.9 kB  00:00:00
+base                                                                                                                                                                                                                  | 3.6 kB  00:00:00
+epel/x86_64/metalink                                                                                                                                                                                                  |  36 kB  00:00:00
+extras                                                                                                                                                                                                                | 3.4 kB  00:00:00
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+https://rpm.nodesource.com/pub_6.x/el/7/x86_64/repodata/repomd.xml: [Errno 14] curl#7 - "Failed to connect to 2600:9000:200c:1c00:16:cdcc:51c0:93a1: Network is unreachable"
+Trying other mirror.
+updates                                                                                                                                                                                                               | 3.4 kB  00:00:00
+Loading mirror speeds from cached hostfile
+ * EA4: 169.255.59.74
+ * base: repos-jnb.psychz.net
+ * epel: mirror.wbs.co.za
+ * extras: repos-jnb.psychz.net
+ * updates: repos-jnb.psychz.net
+No packages marked for update
+[root@managedframework /]# sudo yum -y install httpd mod_ssl
+Loaded plugins: fastestmirror, universal-hooks
+nodesource                                                                                                                                                                                                            | 2.5 kB  00:00:00
+Loading mirror speeds from cached hostfile
+ * EA4: 169.255.59.74
+ * base: repos-jnb.psychz.net
+ * epel: mirror.wbs.co.za
+ * extras: repos-jnb.psychz.net
+ * updates: repos-jnb.psychz.net
+No package httpd available.
+No package mod_ssl available.
+Error: Nothing to do
+[root@managedframework /]# cd /etc
+[root@managedframework etc]# ls
+adjtime                    dbowners                         firewalld                       issue                     named                           prelink.conf.d                    scl                      trueuserdomains
+aliases                    dbus-1                           fonts                           issue.net                 named.conf                      printcap                          screenrc                 trueuserowners
+aliases.db                 default                          fstab                           kdump.conf                named.conf.cache                profile                           secondarymx              trusted-key.key
+alternatives               demodomains                      fstab.quotas                    kernel                    named.conf.precpanelinstall     profile.d                         securetty                trustedmailhosts
+anacrontab                 demouids                         fstab,v                         krb5.conf                 named.conf.prerebuilddnsconfig  proftpd                           security                 trusted_mail_users
+antivirus.exim             demousers                        ftpd-dhparam.pem                krb5.conf.d               named.conf.rebuilddnsconfig     proftpd.conf                      selinux                  tuned
+apache2                    depmod.d                         ftpd-dsa-key.pem                ld.so.cache               named.conf,v                    protocols                         senderverifybypasshosts  udev
+asound.conf                dhcp                             ftpd-dsa.pem                    ld.so.conf                named.conf.zonedir.cache        pure-ftpd                         services                 updatedb.conf
+at.deny                    dhparams.pem                     ftpd-rsa-key.pem                ld.so.conf.d              named.iscdlv.key                pure-ftpd.conf.rpmsave            sestatus.conf            userbwlimits
+audisp                     digestshadow                     ftpd-rsa.pem                    libaudit.conf             named.rfc1912.zones             pure-ftpd.pem                     shadow                   userdatadomains
+audit                      DIR_COLORS                       gcrypt                          libnl                     named.root.key                  python                            shadow-                  userdatadomains.json
+avahi                      DIR_COLORS.256color              GeoIP.conf                      libuser.conf              nanorc                          quota.conf                        shadow.nouids.cache      userdomains
+backupmxhosts              DIR_COLORS.lightbgcolor          GeoIP.conf.default              localaliases              neighbor_netblocks              rc0.d                             shadow,v                 userplans
+bash_completion.d          dnsmasq.conf                     ghostscript                     localdomains              netconfig                       rc1.d                             shells                   valiases
+bashrc                     dnsmasq.d                        gnupg                           locale.conf               NetworkManager                  rc2.d                             skel                     vconsole.conf
+binfmt.d                   domainips                        GREP_COLORS                     localtime                 networks                        rc3.d                             skipsmtpcheckhosts       vdomainaliases
+blacklist.dat              domainusers                      greylist_common_mail_providers  login.defs                nginx                           rc4.d                             smartmontools            vfilters
+centos-release             dovecot                          greylist_trusted_netblocks      logrotate.conf            nocgiusers                      rc5.d                             spammeripblocks          vftp
+centos-release-upstream    dracut.conf                      groff                           logrotate.d               nscd.conf                       rc6.d                             spammers                 vimrc
+chkconfig.d                dracut.conf.d                    group                           lvm                       nscddisable                     rc.d                              ssh                      virc
+chkserv.d                  e2fsck.conf                      group-                          lynx.cfg                  nsswitch.conf                   rc.local                          ssl                      webspam
+cpanel                     elinks.conf                      grub2.cfg                       lynx.lss                  nsswitch.conf.bak               rdma                              ssldomains               wgetrc
+cpanel_exim_system_filter  email_send_limits                grub2-efi.cfg                   lynx-site.cfg             nsswitch.conf.rpmnew            recent_authed_mail_ips            statetab                 wpa_supplicant
+cpanel_mail_netblocks      environment                      grub.d                          machine-id                openldap                        recent_authed_mail_ips_users      statetab.d               wwwacct.conf
+cpanel_php_fpmdisable      ethertypes                       gshadow                         magic                     opt                             recent_recipient_mail_server_ips  stats.conf               wwwacct.conf.cache
+cpanelsync.exclude         exim.aclspam                     gshadow-                        mail                      os-release                      redhat-release                    subgid                   wwwacct.conf.shadow
+cpbackup.conf              exim.conf                        gss                             mailbox_formats           outgoing_mail_hold_users        relayhosts                        subuid                   wwwacct.conf.shadow.cache
+cpbackup.conf.cache        exim.conf.dist                   host.conf                       mailcap                   outgoing_mail_suspended_users   relayhostsusers                   subversion               X11
+cpsources.conf             exim.conf.localopts              hostname                        mailhelo                  pam.d                           remotedomains                     sudo.conf                xdg
+cpspamd.conf               exim.conf.mailman2.dist          hosts                           mailips                   passwd                          resolv.conf                       sudoers                  xinetd.conf
+cpupdate.conf              exim.conf.mailman2.exiscan.dist  hosts.allow                     mail.rc                   passwd-                         resolv.conf.bak                   sudoers.d                xinetd.d
+cron.d                     exim.crt                         hosts.bak                       makedumpfile.conf.sample  passwd.cache                    rndc.conf                         sudo-ldap.conf           yum
+cron.daily                 exim.key                         hosts.deny                      man_db.conf               passwd.nouids.cache             rndc.key                          sysconfig                yum.conf
+cron.deny                  eximmailtrap                     httpd                           mime.types                passwd,v                        rpc                               sysctl.conf              yum.repos.d
+cron.hourly                exim.pl                          ImageMagick                     mke2fs.conf               pkcs11                          rpm                               sysctl.d                 zlogin
+cron.monthly               exim.pl.local                    init.d                          modprobe.d                pki                             rsyncd.conf                       systemd                  zlogout
+crontab                    eximrejects                      inittab                         modules-load.d            plymouth                        rsyslog.conf                      system-release           zprofile
+cron.weekly                exim_trusted_configs             inputrc                         motd                      pm                              rsyslog.d                         system-release-cpe       zshenv
+crypttab                   exports                          ipaddrpool                      mtab                      polkit-1                        rwtab                             tcsd.conf                zshrc
+csh.cshrc                  favicon.png                      iproute2                        mta_dkim_active           popt.d                          rwtab.d                           terminfo
+csh.login                  filesystems                      ips                             my.cnf                    ppp                             sasl2                             tmpfiles.d
+[root@managedframework etc]# vi yum.conf
+[main]
+exclude=courier* dovecot* exim* filesystem httpd* mod_ssl* mydns* mysql* nsd* p0f php* proftpd* pure-ftpd* spamassassin* squirrelmail*
+tolerant=1
+errorlevel=1
+cachedir=/var/cache/yum/$basearch/$releasever
+keepcache=0
+debuglevel=2
+logfile=/var/log/yum.log
+exactarch=1
+obsoletes=1
+gpgcheck=1
+plugins=1
+installonly_limit=5
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum
+distroverpkg=centos-release
+
+
+#  This is the default, if you make this bigger yum won't see if the metadata
+# is newer on the remote and so you'll "gain" the bandwidth of not having to
+# download the new metadata and "pay" for it by yum not having correct
+# information.
+#  It is esp. important, to have correct metadata, for distributions like
+# Fedora which don't keep old packages around. If you don't like this checking
+# interupting your command line usage, it's much better to have something
+# manually check the metadata once an hour (yum-updatesd will do this).
+# metadata_expire=90m
+
+# PUT YOUR REPOS HERE OR IN separate files named file.repo
+# in /etc/yum.repos.d
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"yum.conf" 29L, 1129C
+
