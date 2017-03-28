@@ -1,9 +1,13 @@
 ﻿export class User {
-    id: number;
+    id: string;
     username: string;
     password: string;
     firstName: string;
     lastName: string;
+
+    name: string;
+    isAdmin: boolean;
+    isActive: boolean;
 }
 
 //export class User {

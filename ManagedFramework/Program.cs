@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ManagedFramework
@@ -11,21 +8,26 @@ namespace ManagedFramework
     {
         public static void Main(string[] args)
         {
-            //var host = new WebHostBuilder()
-            //   .UseKestrel()
-            //   .UseUrls("http://*:80")
-            //   .UseContentRoot(Directory.GetCurrentDirectory())
-            //   //.UseIISIntegration()
-            //   .UseStartup<Startup>()
-            //   .Build();
+            Console.Title = "Managed Framework";
+
             var host = new WebHostBuilder()
                 .UseKestrel()
+                .UseUrls("http://localhost:5000")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
             host.Run();
+
+            //var host = new WebHostBuilder()
+            //    .UseKestrel()
+            //    .UseContentRoot(Directory.GetCurrentDirectory())
+            //    .UseIISIntegration()
+            //    .UseStartup<Startup>()
+            //    .Build();
+
+            //host.Run();
         }
     }
 }
