@@ -39,16 +39,20 @@
     <None Remove="ClientApp\app\settings\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="wwwroot\index.html.delete" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="ClientApp\app\components\login\" />
     <Folder Include="ClientApp\app\_authentication\services\" />
     <Folder Include="ClientApp\app\_helpers\" />
     <Folder Include="ClientApp\app\_directives\" />
-    <Folder Include="ClientApp\assets\js\" />
-    <Folder Include="ClientApp\assets\styles\" />
     <Folder Include="ClientApp\css\" />
     <Folder Include="ClientApp\fonts\" />
     <Folder Include="ClientApp\style\" />
     <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Program.cs" />
