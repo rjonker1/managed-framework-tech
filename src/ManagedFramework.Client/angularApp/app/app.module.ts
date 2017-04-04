@@ -8,7 +8,11 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { routing } from './app.routing';
 import { Configuration } from './app.constants';
 
+import { ForbiddenComponent } from './components/forbidden/index'
+import { UnauthorizedComponent } from './components/unauthorized/index'
 import { HomeComponent } from './components/home/index';
+
+import { AuthModule } from './auth/index';
 
 @NgModule({
     imports: [
@@ -18,14 +22,14 @@ import { HomeComponent } from './components/home/index';
         HttpModule,
         JsonpModule,
         routing,
-        //AuthModule.forRoot(),
+        AuthModule.forRoot(),
     ],
     declarations: [
         AppComponent,
         NavMenuComponent,
-        //ForbiddenComponent,
+        ForbiddenComponent,
         HomeComponent,
-        //UnauthorizedComponent,
+        UnauthorizedComponent,
         //DataEventRecordsListComponent,
         //DataEventRecordsCreateComponent,
         //DataEventRecordsEditComponent,

@@ -98,7 +98,7 @@ namespace ManagedFramework.Client
             var angularRoutes = new[] {
                 "/Unauthorized",
                 "/Forbidden",
-                "/uihome",
+                "/home",
                 "/dataeventrecords/",
                 "/dataeventrecords/create",
                 "/dataeventrecords/edit/",

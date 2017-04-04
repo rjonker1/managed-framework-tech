@@ -40,10 +40,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="angularApp\app\auth\services\" />
     <Folder Include="angularApp\app\_services\" />
     <Folder Include="angularApp\app\_models\" />
     <Folder Include="angularApp\app\_helpers\" />
-    <Folder Include="angularApp\app\_guards\" />
     <Folder Include="angularApp\app\_directives\" />
     <Folder Include="angularApp\css\" />
     <Folder Include="angularApp\assets\" />
