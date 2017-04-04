@@ -1,0 +1,13 @@
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.deps.json
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.runtimeconfig.json
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.runtimeconfig.dev.json
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.dll
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\obj\Debug\netcoreapp1.1\ManagedFramework.SqlLite.csprojResolveAssemblyReference.cache
+D:\Projects\my\managed-framework-tech\ManagedFramework.SqlLite\obj\Debug\netcoreapp1.1\ManagedFramework.SqlLite.AssemblyInfo.cs
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.deps.json
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.runtimeconfig.json
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.runtimeconfig.dev.json
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.SqlLite.dll
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\obj\Debug\netcoreapp1.1\ManagedFramework.SqlLite.csprojResolveAssemblyReference.cache
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\obj\Debug\netcoreapp1.1\ManagedFramework.SqlLite.AssemblyInfo.cs
+D:\Projects\my\managed-framework-tech\src\ManagedFramework.SqlLite\bin\Debug\netcoreapp1.1\ManagedFramework.Core.dll
