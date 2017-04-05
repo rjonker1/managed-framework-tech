@@ -9,6 +9,7 @@ export class HasAdminRoleCanLoadGuard implements CanLoad {
     }
 
     canLoad(route: Route): boolean {
-        return this.securityService.HasUserAdminRole && this.securityService.IsAuthorized();
+        return false;
+        //return this.securityService.HasUserAdminRole && this.securityService.IsAuthorized();
     }
 }

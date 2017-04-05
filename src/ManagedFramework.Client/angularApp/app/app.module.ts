@@ -8,10 +8,11 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { routing } from './app.routing';
 import { Configuration } from './app.constants';
 
-import { ForbiddenComponent } from './components/forbidden/index'
-import { UnauthorizedComponent } from './components/unauthorized/index'
+import { ForbiddenComponent } from './components/forbidden/index';
+import { UnauthorizedComponent } from './components/unauthorized/index';
 import { HomeComponent } from './components/home/index';
 
+import { HasAdminRoleAuthenticationGuard, HasAdminRoleCanLoadGuard } from './_guards/index';
 import { AuthModule } from './auth/index';
 
 @NgModule({
@@ -39,8 +40,8 @@ import { AuthModule } from './auth/index';
         //DataEventRecordsService,
         //UserManagementService,
         Configuration,
-        //HasAdminRoleAuthenticationGuard,
-        //HasAdminRoleCanLoadGuard
+        HasAdminRoleAuthenticationGuard,
+        HasAdminRoleCanLoadGuard
     ],
     bootstrap: [AppComponent],
 })

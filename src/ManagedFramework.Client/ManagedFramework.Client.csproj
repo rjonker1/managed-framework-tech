@@ -26,9 +26,6 @@
     <Content Remove="angularApp\**" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="package.json.delete">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
     <Content Include="wwwroot\js\site.js" />
   </ItemGroup>
   <ItemGroup>

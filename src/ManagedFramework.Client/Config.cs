@@ -4,7 +4,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
-namespace QuickstartIdentityServer
+namespace ManagedFramework.Client
 {
     using System.Security.Claims;
 
@@ -47,12 +47,12 @@ namespace QuickstartIdentityServer
         }
 
         // clients want to access resources (aka scopes)
-        public static IEnumerable<Client> GetClients()
+        public static IEnumerable<IdentityServer4.Models.Client> GetClients()
         {
             // client credentials client
-            return new List<Client>
+            return new List<IdentityServer4.Models.Client>
             {
-                new Client
+                new IdentityServer4.Models.Client
                 {
                     ClientName = "managed-framework-client1",
                     ClientId = "managed-framework-client1",

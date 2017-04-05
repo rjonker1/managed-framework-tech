@@ -10,6 +10,7 @@ export class HasAdminRoleAuthenticationGuard implements CanActivate {
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
         const url = state.url;
-        return this.securityService.HasUserAdminRole && this.securityService.IsAuthorized();
+        return false;
+       // return this.securityService.HasUserAdminRole && this.securityService.IsAuthorized();
     }
 }
